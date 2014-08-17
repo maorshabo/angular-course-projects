@@ -15,7 +15,7 @@
   ],
   "dependencies": {
     "bootstrap": "~3.2.0",
-    "angular": "~1.2.21",
+    "angular": "1.2.7",
     "bootsketch": "~1.0.0"
   }
 }
