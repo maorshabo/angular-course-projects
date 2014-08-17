@@ -36,7 +36,7 @@
         <!-- task log -->
         <div class="col-lg-3" ng-controller="LogController as logsCtrl">
             <ul class="list-unstyled">
-                <li ng-repeat="log in logsCtrl.logs"><samp>{{ log }}</samp></li>
+                <li ng-repeat="log in logsCtrl.logs"><samp>{{ log.time | date:'short' }} - {{ log.log }}</samp></li>
             </ul>
         </div> <!-- /task log -->
 

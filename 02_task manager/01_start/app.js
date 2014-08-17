@@ -80,14 +80,7 @@
         this.logs = [];
 
         this.addLog = function(log) {
-            var d = new Date();
-            var curr_date = d.getDate();
-            var curr_month = d.getMonth() + 1; //Months are zero based
-            var curr_year = d.getFullYear();
-            var curr_hours = d.getHours();
-            var curr_mins = d.getMinutes();
-            var curr_secs = d.getSeconds();
-            this.logs.unshift(curr_date + "/" + curr_month + "/" + curr_year + " " + curr_hours + ":" + curr_mins + ":" + curr_secs + " - " + log);
+            this.logs.unshift({time: Date.now(), log: log});
         };
 
         this.clearLog = function() {
